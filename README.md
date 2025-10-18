@@ -13,9 +13,9 @@ pip install -r requirements.txt
 python src/cli.py
 
 ## Project layout
-- **data/** — CSV datasets (small, deterministic)
-- **notebooks/** — `midtermproject.ipynb` (shows Apriori & FP-Growth runs)
-- **src/** — source code  
-  - `cli.py` — brute-force runner (Part 2)  
+- data/ — CSV datasets 
+- notebooks/ — `midtermproject.ipynb` 
+- src/ — source code  
+  - `cli.py` — brute-force runner 
   - `bruteforce.py`, `rules.py`, `io_utils.py` — mining & rule generation  
-  - `apriori_fp.py` — library wrappers for Apriori & FP-Growth (Part 3)
+  - `apriori_fp.py` — library wrappers for Apriori & FP-Growth 
