@@ -67,7 +67,7 @@ def main() -> int:
     try:
         csvs = _find_datasets()
     except Exception as e:
-        print(f"❌ {e}")
+        print(f" {e}")
         return 2
 
     csv_path = _prompt_menu(csvs)
@@ -84,7 +84,7 @@ def main() -> int:
         print("\nCancelled.")
         return 130
     except Exception as e:
-        print(f"❌ Failed to load/validate '{csv_path.name}': {e}")
+        print(f" Failed to load/validate '{csv_path.name}': {e}")
         return 3
 
     n_tx = len(txns)
@@ -97,13 +97,13 @@ def main() -> int:
     try:
         freq = mine_frequent_itemsets(txns, minsup)
     except Exception as e:
-        print(f"❌ Brute-force mining failed: {e}")
+        print(f" Brute-force mining failed: {e}")
         return 4
 
     try:
         rules = generate_rules(freq, minconf)
     except Exception as e:
-        print(f"❌ Rule generation failed: {e}")
+        print(f" Rule generation failed: {e}")
         return 5
 
     # Print frequent itemsets by size
