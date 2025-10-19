@@ -1,16 +1,19 @@
 # CS 634 — Midterm Project 
 
-## Quick start
+## Setup (one time)
+
 ```bash
+# Create & activate a virtual environment
 python -m venv .venv
-# Windows
+
+# Windows PowerShell
 .venv\Scripts\Activate.ps1
 
 # macOS/Linux
 source .venv/bin/activate
 
+# Install dependencies
 pip install -r requirements.txt
-python src/cli.py
 
 ## Project layout
 - data/ — CSV datasets 
